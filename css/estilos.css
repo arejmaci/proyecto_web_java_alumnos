@@ -98,11 +98,11 @@ body {
                 font-size: 1.2rem;
             }
 
-            .listaNav{
+            .listaNav {
                 padding: initial;
 
-                .listaItem{
-                    .linkNav{
+                .listaItem {
+                    .linkNav {
                         font-weight: 400;
                         margin-right: initial;
                         font-size: 1rem;
@@ -117,10 +117,10 @@ body {
 
 /* SECCION PRINCIPAL */
 
-.main{
-    .sectionPrincipal{
-        color:white;
-        background:linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/banner-bg.jpg);
+.main {
+    .sectionPrincipal {
+        color: white;
+        background: linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/banner-bg.jpg);
         background-size: cover;
         background-position: center;
         height: 90vh;
@@ -130,17 +130,19 @@ body {
         align-items: center;
         text-align: center;
 
-        .tituloPrincipal{
+        .tituloPrincipal {
             font-size: 4rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
-        .subtituloPrincipal{
+
+        .subtituloPrincipal {
             font-size: 2.2rem;
             font-weight: 400;
             margin-bottom: 1rem;
         }
-        .botonRegistrarse{
+
+        .botonRegistrarse {
             background-color: #9f3647;
             color: #ffffff;
             padding: 1rem 2rem;
@@ -149,13 +151,70 @@ body {
             font-weight: 700;
             text-decoration: none;
 
-            transition: transform 0.3s,box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
 
-            &:hover{
+            &:hover {
                 transform: scale(0.95);
                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             }
         }
+
+    }
+
+    .buscadorPrincipal {
+        background-color: #181419;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tituloSection {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .buscadorpeliculas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+
+            .inputBuscador {
+                height: 50px;
+                width: 500px;
+                margin: 20px 10px;
+                padding: 0px 20px;
+                font-size: 1.2rem;
+                border: 2px solid white;
+                border-radius: 25px;
+                outline: none;
+            }
+
+            .botonBuscador {
+                background-color: #9f3647;
+                color: #ffffff;
+                display: inline-block;
+                height: 50px;
+                margin: 20px 10px;
+                padding: 0 20px;
+                border-radius: 25px;
+                font-size: 1.2rem;
+                font-weight: 700;
+                border: 2px solid white;
+                text-align: center;
+
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover {
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                }
+
+            }
+        }
+
 
     }
 }
